@@ -1,0 +1,243 @@
+@charset "ISO-8859-1";
+:root{
+    --width: 270px;
+    --padding: 10px;
+    --bgcolor: rgb(0, 0, 0);
+    --hovercolor: rgb(23, 23, 23);
+    --width-collapsed: 50px;
+
+}
+body{
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+.body-expanded{
+    margin-left: var(--width);
+}
+#main-container{
+    color: white;
+}
+#sidmenu{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+#sidmenu a{
+    color: white;
+    text-decoration: none;
+}
+/*
+    HEADER
+*/
+#sidmenu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+#sidmenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sidmenu #header #title, #sidmenu #header #menu-btn{
+    vertical-align: middle;
+}
+#sidmenu #header #menu-btn{
+    display: inline-block;
+}
+#sidmenu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+#sidmenu #header #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+#sidmenu #header #menu-btn .btn-hamburger{
+   background-color: white;
+   width: 100%;
+   height: 2px;
+   margin: 5px 0;
+}
+/*
+    PROFILE
+*/
+#sidmenu #profile{
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+#sidmenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+
+}
+#sidmenu #profile #photo img{
+    border-radius: 50%;
+    width: 60%;
+}
+#sidmenu #profile #photo,#sidmenu #profile #name{
+    font-size: 24px;
+    padding: var(--padding) 0;
+    overflow: hidden;
+}
+/*
+    ITEM
+*/
+#sidmenu #menu-items{
+    overflow: hidden;
+}
+#sidmenu #menu-items .item{
+    width: var(--width);
+}
+#sidmenu #menu-items .item .icon{
+    display: inline-block;
+}
+#sidmenu #menu-items .item .icon,
+#sidmenu #menu-items .item .title{
+   font-size: 14px;
+   vertical-align: middle;
+   overflow: hidden;
+   display: inline-block;
+}
+#sidmenu #menu-items .item a{
+    display: block;
+}
+#sidmenu #menu-items .item a:hover{
+    background-color: var(--hovercolor);
+}
+#sidmenu #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+#sidmenu #menu-items .item .icon img{
+    width: 100%;
+}
+#sidmenu #menu-items .item .title{
+    padding: var(--padding) 0;
+}
+
+
+#sidmenu #menu-items .item.separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+
+
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+}
+.menu-expanded #header #title{
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+.menu-expanded #header #title span{
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+
+}
+.menu-expanded #profile #photo{
+    width: 200px;
+}
+.menu-expanded #profile #name{
+    width: 100%;
+}
+
+
+.menu-collapsed{
+    width: var(--width-collapsed);
+}
+.menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.menu-collapsed #profile #name{
+   display: none;
+}
+.menu-collapsed .item{
+    width: 100px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: black;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: black;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: black;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+ 
+ /*buscar*/
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
